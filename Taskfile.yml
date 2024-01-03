@@ -31,5 +31,3 @@ tasks:
   deploy:
     cmds:
       - gcloud run deploy gcr-proxy --allow-unauthenticated --image "europe-docker.pkg.dev/kubemq/images/{{.BINARY_NAME}}:latest" --set-env-vars "REGISTRY_HOST=europe-docker.pkg.dev" --set-env-vars "REPO_PREFIX=kubemq/images"
-
-#  curl -H "Authorization: Bearer ya29.a0AfB_byD5FHNVPCJAdqjAIssQt604bsJ4_FJROtVCNuRrupxbwJOK9XX9EInJ9Kt4bSLMOGGPGDKdLyILo_6jXq5Wrgc_EjAoEzz6huLnbf7AD_-fvI_e-p5Aam3epBUVj4G1muRLijTS7oXhSTgK1G44O6r4NQN-gyZszzBOt8YaCgYKAcQSARASFQHGX2MiFqAmuJbenHGnMZnKfO-4Bw0178" -H "Accept: application/vnd.docker.distribution.manifest.v2+json" "https://europe-docker.pkg.dev/v2/kubemq/images/manifests/latest"
